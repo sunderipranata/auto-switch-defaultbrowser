@@ -9,11 +9,12 @@ brew install defaultbrowser
 How to set the automation?
 
 
-clone the repository: (.scripts/ (or anywhere you like, i will be using this directory)
+clone the repository: (~/.scripts/ (or anywhere you like, i will be using this directory)
 
-mkdir .scripts
-cd .scripts
+mkdir ~/.scripts && cd ~/.scripts
 git clone git@github.com:sunderipranata/auto-switch-defaultbrowser.git
+cd auto-switch-defaultbrowser
+osacompile -o ~/.scripts/confirm-system-dialog.app ./confirm-system-dialog.applescript
 
 
 try it yourself: 
