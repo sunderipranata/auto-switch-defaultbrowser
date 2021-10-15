@@ -1,6 +1,6 @@
 
 mkdir -p ~/.scripts/logs      
-touch ~/.scripts/auto-switch-defaultbrowser.log
+touch ~/.scripts/logs/auto-switch-defaultbrowser.log
 
 
 echo $(date) >> ./logs/auto-switch-defaultbrowser.log
