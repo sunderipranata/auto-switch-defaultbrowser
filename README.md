@@ -1,7 +1,5 @@
 # auto-switch-defaultbrowser
-auto switcher defaultbrowser for macos
-
-
+A guide to auto switch defaultbrowser with cron. Started with my needs and this is actually just a note. Feel free to follow through.
 
 # Prerequisite
 
@@ -40,6 +38,9 @@ and insert
 
     0 8 * * 1-5 sh ~/.scripts/auto-switch-defaultbrowser/auto-switch-defaultbrowser.sh firefox 
     0 18 * * 1-5 sh ~/.scripts/auto-switch-defaultbrowser/auto-switch-defaultbrowser.sh chrome
+
+Feel free to change the cron to your needs. https://crontab.guru/ will surely help you! :)
+
 
 ## Peek logs:
 tail ~/.scripts/logs/auto-switch-defaultbrowser.log
