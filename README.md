@@ -1,5 +1,5 @@
 # auto-switch-defaultbrowser
-A guide to auto switch defaultbrowser with cron. Started with my needs and this is actually just a note. Feel free to follow through.
+A guide to auto switch defaultbrowser with crontab on MacOS. Started with my needs and this is actually just a note. Feel free to follow through.
 
 # Prerequisite
 
@@ -17,11 +17,13 @@ Clone the repository. This will setup a folder at ~/.scripts/; feel free to chan
     git clone git@github.com:sunderipranata/auto-switch-defaultbrowser.git
     cd auto-switch-defaultbrowser
     osacompile -o ~/.scripts/confirm-system-dialog.app ./confirm-system-dialog.applescript
+    chmod +x auto-switch-defaultbrowser.sh
     cd
 
-Then add the following path to your `.profile` or `.bashrc` or `.zshrc`
+Then add the following path to your `.profile` or `.bashrc` or `.zshrc` and source it.
 
-    PATH=$PATH:$HOME/.scripts/auto-switch-defaultbrowser    
+    export PATH=$PATH:$HOME/.scripts/auto-switch-defaultbrowser
+    source .zshrc
 
 ## Try it yourself
 Try changing the default browser manually (without confirmation pop up from the OS)
