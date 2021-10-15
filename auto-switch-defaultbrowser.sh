@@ -1,3 +1,4 @@
+#!/bin/bash
 
 mkdir -p ~/.scripts/logs      
 touch ~/.scripts/logs/auto-switch-defaultbrowser.log
