@@ -38,18 +38,24 @@ Note: The supported browser will refer to https://github.com/kerma/defaultbrowse
 <br>
 
 # Automation
+copy your PATH contents:
+
+    echo $PATH
+
 create crontab:
 
     EDITOR=nano crontab -e
 
 and insert
 
-    PATH=$PATH:$HOME/.scripts/auto-switch-defaultbrowser
-    0 8 * * 1-5 auto-switch-defaultbrowser firefox 
-    0 18 * * 1-5 auto-switch-defaultbrowser chrome
+    PATH=[copy the path]
+    0 8 * * 1-5 auto-switch-defaultbrowser firefox >> /tmp/cron.out 2>&1
+    0 18 * * 1-5 auto-switch-defaultbrowser chrome >> /tmp/cron.out 2>&1
 
 Feel free to change the cron to your needs. https://crontab.guru/ will surely help you! :)
 
-
 ## Peek logs:
+
     tail ~/.scripts/logs/auto-switch-defaultbrowser.log
+    tail /tmp/cron.out
+
