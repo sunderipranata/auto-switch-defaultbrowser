@@ -44,8 +44,9 @@ create crontab:
 
 and insert
 
-    0 8 * * 1-5 sh auto-switch-defaultbrowser firefox 
-    0 18 * * 1-5 sh auto-switch-defaultbrowser chrome
+    PATH=$PATH:$HOME/.scripts/auto-switch-defaultbrowser
+    0 8 * * 1-5 auto-switch-defaultbrowser firefox 
+    0 18 * * 1-5 auto-switch-defaultbrowser chrome
 
 Feel free to change the cron to your needs. https://crontab.guru/ will surely help you! :)
 
