@@ -7,3 +7,4 @@ touch ~/.scripts/logs/auto-switch-defaultbrowser.log
 echo "$(date) - using $1" >> ~/.scripts/logs/auto-switch-defaultbrowser.log
 defaultbrowser "$1"
 osascript ~/.scripts/confirm-system-dialog.app >> ~/.scripts/logs/auto-switch-defaultbrowser.log
+echo ""
