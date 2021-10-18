@@ -52,4 +52,4 @@ Feel free to change the cron to your needs. https://crontab.guru/ will surely he
 
 
 ## Peek logs:
-tail ~/.scripts/logs/auto-switch-defaultbrowser.log
+    tail ~/.scripts/logs/auto-switch-defaultbrowser.log
