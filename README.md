@@ -34,6 +34,7 @@ Try changing the default browser manually (without confirmation pop up from the 
     auto-switch-defaultbrowser chrome
     
 Note: The supported browser will refer to https://github.com/kerma/defaultbrowser
+Note: you should enable the permission first from system settings!
 
 <br>
 
